@@ -130,6 +130,7 @@ class Tile():
                 self.cScheme = ["GREEN2","GREEN3"]
         else:
             self.sprite = sprites["BLANK"]
+            self.cScheme = ["GREEN2","GRAY"]
 
     def draw(self,cur:Cursor):
         cur.setPos(self.pos+self.game.boardCorner) # set the position of the cursor
@@ -194,6 +195,7 @@ class Bomb(Tile):
             self.cScheme = ["RED","GRAY"]
         else:
             self.sprite = sprites["BLANK"]
+            self.cScheme = ["GREEN2","GRAY"]
 
 class Sweeper():
     # the player sprite
